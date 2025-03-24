@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace EmployeeMangment
 {
-    internal class Report
+    internal class PerformanceReview
     {
+
     }
 }
