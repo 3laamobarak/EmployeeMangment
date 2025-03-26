@@ -7,16 +7,18 @@ using static EmployeeMangment.Program;
 
 namespace EmployeeMangment
 {
-    internal class Employee
+    public class Employee
     {
         int Id;
-        string Name;
+        public string Name;
         string Age;
-        decimal Salary;
+        public decimal Salary;
+        public short Score = 1;
         Department Department;
         DateTime EmploymentDate;
         Statue statue;
-        public Employee(string name, string age, decimal salary, Department department)
+
+        public Employee(string name, string age, decimal salary, Department department,short score)
         {
             Name = name;
             Age = age;
@@ -24,10 +26,12 @@ namespace EmployeeMangment
             Department = department;
             EmploymentDate = DateTime.Now;
             statue = Statue.Active;
+            Score = score;
         }
-        public void promoted(Employee employee, decimal newSalary)
+        public void promoted(decimal newSalary)
         {
-            employee.Salary = newSalary;
+            Score++;
+            Salary = newSalary;
         }
         public void Transfer(Department department)
         {
@@ -38,9 +42,12 @@ namespace EmployeeMangment
             statue = Statue.Terminated;
         }
 
-
-
-
+        public override string ToString()
+        {
+            return $"ID: {Id}, \t Name: {Name}, \t Age: {Age}," +
+                $"\n\tSalary: {Salary}, Department: {Department.Name}, EmploymentDate: {EmploymentDate}," +
+                $"\n\tStatus: {statue}";
+        }
 
     }
 }

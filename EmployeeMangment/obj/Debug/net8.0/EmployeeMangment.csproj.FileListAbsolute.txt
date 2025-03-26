@@ -1,0 +1,15 @@
+D:\iti\c#_oop\EmployeeMangment\EmployeeMangment\bin\Debug\net8.0\EmployeeMangment.exe
+D:\iti\c#_oop\EmployeeMangment\EmployeeMangment\bin\Debug\net8.0\EmployeeMangment.deps.json
+D:\iti\c#_oop\EmployeeMangment\EmployeeMangment\bin\Debug\net8.0\EmployeeMangment.runtimeconfig.json
+D:\iti\c#_oop\EmployeeMangment\EmployeeMangment\bin\Debug\net8.0\EmployeeMangment.dll
+D:\iti\c#_oop\EmployeeMangment\EmployeeMangment\bin\Debug\net8.0\EmployeeMangment.pdb
+D:\iti\c#_oop\EmployeeMangment\EmployeeMangment\obj\Debug\net8.0\EmployeeMangment.GeneratedMSBuildEditorConfig.editorconfig
+D:\iti\c#_oop\EmployeeMangment\EmployeeMangment\obj\Debug\net8.0\EmployeeMangment.AssemblyInfoInputs.cache
+D:\iti\c#_oop\EmployeeMangment\EmployeeMangment\obj\Debug\net8.0\EmployeeMangment.AssemblyInfo.cs
+D:\iti\c#_oop\EmployeeMangment\EmployeeMangment\obj\Debug\net8.0\EmployeeMangment.csproj.CoreCompileInputs.cache
+D:\iti\c#_oop\EmployeeMangment\EmployeeMangment\obj\Debug\net8.0\EmployeeMangment.sourcelink.json
+D:\iti\c#_oop\EmployeeMangment\EmployeeMangment\obj\Debug\net8.0\EmployeeMangment.dll
+D:\iti\c#_oop\EmployeeMangment\EmployeeMangment\obj\Debug\net8.0\refint\EmployeeMangment.dll
+D:\iti\c#_oop\EmployeeMangment\EmployeeMangment\obj\Debug\net8.0\EmployeeMangment.pdb
+D:\iti\c#_oop\EmployeeMangment\EmployeeMangment\obj\Debug\net8.0\EmployeeMangment.genruntimeconfig.cache
+D:\iti\c#_oop\EmployeeMangment\EmployeeMangment\obj\Debug\net8.0\ref\EmployeeMangment.dll

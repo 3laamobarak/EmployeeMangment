@@ -10,6 +10,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
+            Report.TestReport();
         }
     }
 }

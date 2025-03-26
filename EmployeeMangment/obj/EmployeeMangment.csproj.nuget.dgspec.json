@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Desktop\\ITI\\EmployeeMangment\\EmployeeMangment\\EmployeeMangment.csproj": {}
+    "D:\\iti\\c#_oop\\EmployeeMangment\\EmployeeMangment\\EmployeeMangment.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Desktop\\ITI\\EmployeeMangment\\EmployeeMangment\\EmployeeMangment.csproj": {
+    "D:\\iti\\c#_oop\\EmployeeMangment\\EmployeeMangment\\EmployeeMangment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\ITI\\EmployeeMangment\\EmployeeMangment\\EmployeeMangment.csproj",
+        "projectUniqueName": "D:\\iti\\c#_oop\\EmployeeMangment\\EmployeeMangment\\EmployeeMangment.csproj",
         "projectName": "EmployeeMangment",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\ITI\\EmployeeMangment\\EmployeeMangment\\EmployeeMangment.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\ITI\\EmployeeMangment\\EmployeeMangment\\obj\\",
+        "projectPath": "D:\\iti\\c#_oop\\EmployeeMangment\\EmployeeMangment\\EmployeeMangment.csproj",
+        "packagesPath": "C:\\Users\\Win11\\.nuget\\packages\\",
+        "outputPath": "D:\\iti\\c#_oop\\EmployeeMangment\\EmployeeMangment\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Win11\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

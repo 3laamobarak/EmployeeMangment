@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmployeeMangment
 {
-    internal class Department
+    public class Department
     {
         public string Name;
         public string DepartmentHead;
@@ -21,12 +21,17 @@ namespace EmployeeMangment
         {
             employees.Add(employee);
         }
+        public void AddEmployee(List<Employee> employees)
+        {
+            foreach (Employee employee in employees)
+            {
+                AddEmployee(employee);
+            }
+        }
         public void RemoveEmployee(Employee employee)
         {
             employees.Remove(employee);
         }
-
-
 
     }
 }
