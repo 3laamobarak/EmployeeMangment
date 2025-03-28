@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "L:\\iti\\c#_oop\\EmployeeMangment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E9C1C54-FB30-4ECC-8565-01787C7B261F}|EmployeeManagmentWpfUI\\EmployeeManagmentWpfUI.csproj|l:\\iti\\c#_oop\\employeemangment\\employeemanagmentwpfui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E9C1C54-FB30-4ECC-8565-01787C7B261F}|EmployeeManagmentWpfUI\\EmployeeManagmentWpfUI.csproj|solutionrelative:employeemanagmentwpfui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E9C1C54-FB30-4ECC-8565-01787C7B261F}|EmployeeManagmentWpfUI\\EmployeeManagmentWpfUI.csproj|l:\\iti\\c#_oop\\employeemangment\\employeemanagmentwpfui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4E9C1C54-FB30-4ECC-8565-01787C7B261F}|EmployeeManagmentWpfUI\\EmployeeManagmentWpfUI.csproj|solutionrelative:employeemanagmentwpfui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B9F63BDB-D4BA-4212-AFD1-8DC434103A8B}|EmployeeMangment\\EmployeeMangment.csproj|l:\\iti\\c#_oop\\employeemangment\\employeemangment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9F63BDB-D4BA-4212-AFD1-8DC434103A8B}|EmployeeMangment\\EmployeeMangment.csproj|solutionrelative:employeemangment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E9C1C54-FB30-4ECC-8565-01787C7B261F}|EmployeeManagmentWpfUI\\EmployeeManagmentWpfUI.csproj|l:\\iti\\c#_oop\\employeemangment\\employeemanagmentwpfui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4E9C1C54-FB30-4ECC-8565-01787C7B261F}|EmployeeManagmentWpfUI\\EmployeeManagmentWpfUI.csproj|solutionrelative:employeemanagmentwpfui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E9C1C54-FB30-4ECC-8565-01787C7B261F}|EmployeeManagmentWpfUI\\EmployeeManagmentWpfUI.csproj|l:\\iti\\c#_oop\\employeemangment\\employeemanagmentwpfui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{4E9C1C54-FB30-4ECC-8565-01787C7B261F}|EmployeeManagmentWpfUI\\EmployeeManagmentWpfUI.csproj|solutionrelative:employeemanagmentwpfui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{B9F63BDB-D4BA-4212-AFD1-8DC434103A8B}|EmployeeMangment\\EmployeeMangment.csproj|l:\\iti\\c#_oop\\employeemangment\\employeemangment\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9F63BDB-D4BA-4212-AFD1-8DC434103A8B}|EmployeeMangment\\EmployeeMangment.csproj|solutionrelative:employeemangment\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,69 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "L:\\iti\\c#_oop\\EmployeeMangment\\EmployeeMangment\\Program.cs",
               "RelativeDocumentMoniker": "EmployeeMangment\\Program.cs",
               "ToolTip": "L:\\iti\\c#_oop\\EmployeeMangment\\EmployeeMangment\\Program.cs",
               "RelativeToolTip": "EmployeeMangment\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T18:32:54.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "App.config",
-              "DocumentMoniker": "L:\\iti\\c#_oop\\EmployeeMangment\\EmployeeManagmentWpfUI\\App.config",
-              "RelativeDocumentMoniker": "EmployeeManagmentWpfUI\\App.config",
-              "ToolTip": "L:\\iti\\c#_oop\\EmployeeMangment\\EmployeeManagmentWpfUI\\App.config",
-              "RelativeToolTip": "EmployeeManagmentWpfUI\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-03-28T18:21:42.224Z",
+              "WhenOpened": "2025-03-28T19:02:03.574Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "L:\\iti\\c#_oop\\EmployeeMangment\\EmployeeManagmentWpfUI\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "EmployeeManagmentWpfUI\\MainWindow.xaml",
-              "ToolTip": "L:\\iti\\c#_oop\\EmployeeMangment\\EmployeeManagmentWpfUI\\MainWindow.xaml",
-              "RelativeToolTip": "EmployeeManagmentWpfUI\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-28T17:54:15.319Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "App.xaml",
-              "DocumentMoniker": "L:\\iti\\c#_oop\\EmployeeMangment\\EmployeeManagmentWpfUI\\App.xaml",
-              "RelativeDocumentMoniker": "EmployeeManagmentWpfUI\\App.xaml",
-              "ToolTip": "L:\\iti\\c#_oop\\EmployeeMangment\\EmployeeManagmentWpfUI\\App.xaml",
-              "RelativeToolTip": "EmployeeManagmentWpfUI\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-28T18:21:46.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "L:\\iti\\c#_oop\\EmployeeMangment\\EmployeeManagmentWpfUI\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "EmployeeManagmentWpfUI\\MainWindow.xaml.cs",
-              "ToolTip": "L:\\iti\\c#_oop\\EmployeeMangment\\EmployeeManagmentWpfUI\\MainWindow.xaml.cs",
-              "RelativeToolTip": "EmployeeManagmentWpfUI\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
+              "Title": "Menu.cs",
+              "DocumentMoniker": "L:\\iti\\c#_oop\\EmployeeMangment\\EmployeeMangment\\Menu.cs",
+              "RelativeDocumentMoniker": "EmployeeMangment\\Menu.cs",
+              "ToolTip": "L:\\iti\\c#_oop\\EmployeeMangment\\EmployeeMangment\\Menu.cs",
+              "RelativeToolTip": "EmployeeMangment\\Menu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T17:54:14.425Z",
+              "WhenOpened": "2025-03-28T19:02:01.131Z",
               "EditorCaption": ""
             }
           ]
