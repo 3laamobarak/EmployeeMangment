@@ -26,6 +26,7 @@ namespace EmployeeMangment
         EditDepartment,
         ListDepartments,
         UseDepartment,
+        EmployeMenu,
         Exit
     }
 
@@ -67,15 +68,16 @@ namespace EmployeeMangment
         }
 
 
-        public static DepartmentOperation DepartmentListMenu(Company company)
+        public static DepartmentOperation DepartmentListMenu()
         {
             Console.BackgroundColor = ConsoleColor.Yellow;
             Console.ForegroundColor = ConsoleColor.Black;
-            Console.WriteLine($"================= Company({company.Name}): Departments ==================");
+            Console.WriteLine($"================= Company({Program.company.Name}): Departments ==================");
             Console.ResetColor();
             Console.WriteLine("1 - Create Department \t 2 - Delete Department \t 3 - Edit Department \t 4 - List Departments");
             Console.WriteLine("5 - Use Department");
-            Console.WriteLine("q - exit");
+            Console.WriteLine("6 - Employee Menu");
+            Console.WriteLine("7 - exit");
             string input = Console.ReadLine();
             if (int.TryParse(input, out int result) && result != 0)
             {
@@ -88,15 +90,23 @@ namespace EmployeeMangment
         }
 
 
-        public static EmployeeOperation EmployeeListMenu(Department department)
+        public static EmployeeOperation EmployeeListMenu(Department department = null)
         {
             Console.BackgroundColor = ConsoleColor.Yellow;
             Console.ForegroundColor = ConsoleColor.Black;
-            Console.WriteLine($"================= Department({department.Name}): Employees ==================");
+            if (department != null)
+            {
+                Console.WriteLine($"================= Department({department.Name}): Employees ==================");
+            }
+            else
+            {
+                Console.WriteLine($"================= Company({Program.company.Name}): Employees ==================");
+
+            }
             Console.ResetColor();
             Console.WriteLine("1 - Create Employee \t 2 - Delete Employee \t 3 - Edit Employee \t 4 - List Employees");
             Console.WriteLine("5 - Use Employee");
-            Console.WriteLine("q - exit");
+            Console.WriteLine("6 - exit");
             string input = Console.ReadLine();
             if (int.TryParse(input, out int result) && result != 0)
             {

@@ -1,114 +1,77 @@
 ﻿namespace EmployeeMangment
 {
-    internal class Program
+    public class Program
     {
-        public enum Statue
-        {
-            Active,
-            Terminated
-        }
+        public static Company company = new Company("Company 1", "Generic Company for jobs");
+        public static List<Department> departments = new List<Department>();
+        public static List<Employee> employees = new List<Employee>();
+        public static int currentDepartmentIndex = 0;
+        public static int currentEmployeeIndex = 0;
+
+    
         static void Main(string[] args)
         {
+            SampleData.LoadSampleData();
             RunProgram();
         }
 
 
         public static void RunProgram()
         {
-           List<Company> companies = new List<Company>();
-            while (true)
-            {
-                CompanyOperation oper = Menu.CompanyListMenu();
-                switch (oper)
-                {
-                    case CompanyOperation.CreateCompany:
-                        Company.CreateCompany(companies);
-                        break;
-                    case CompanyOperation.DeleteCompany:
-                        Company.DeleteCompany(companies);
-                        break;
-                    case CompanyOperation.EditCompany:
-                        Company.CreateCompany(companies);
-                        break;
-                    case CompanyOperation.ListCompanies:
-                        Company.ListCompanies(companies);
-                        break;
-                    case CompanyOperation.UseCompany:
-                        Company.ListCompaniesToChoose(companies);
-                        string input = Console.ReadLine();
-                        int index = 0;
-                        if (int.TryParse(input, out index) && index < companies.Count)
-                        {
-                            RunDepartments(companies[index]);
-                        }
-                        else
-                        {
-                            Console.WriteLine("Invalid Input");
-                        }
-                        break;
-                    case CompanyOperation.Exit:
-                        Environment.Exit(0);
-                        break;
-                    default:
-                        Console.WriteLine("Invalid Choose");
-                        break;
-                }
-            }
+            RunDepartments();
         }
 
-       public static void RunDepartments(Company company)
+       public static void RunDepartments()
         {
             Console.BackgroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("====================================");
             Console.WriteLine(company.ToString());
+            Console.WriteLine("====================================");
             Console.ResetColor();
-            DepartmentOperation operation = Menu.DepartmentListMenu(company);
+            DepartmentOperation operation = Menu.DepartmentListMenu();
             while(operation != DepartmentOperation.Exit)
             {
                 switch (operation)
                 {
                     // department
                     case DepartmentOperation.CreateDepartment:
-                        Department.CreateDepartment(company.Departments);
+                        Department.CreateDepartment();
                         break;
                     case DepartmentOperation.DeleteDepartment:
-                        Department.DeleteDepartment(company.Departments);
+                        Department.DeleteDepartment();
                         break;
                     case DepartmentOperation.EditDepartment:
-                        Department.CreateDepartment(company.Departments);
+                        Department.EditDepartment();
                         break;
                     case DepartmentOperation.ListDepartments:
-                        Department.ListDepartments(company.Departments);
+                        Department.ListDepartments();
                         break;
                     case DepartmentOperation.UseDepartment:
-                        Department.ListDepartmentsToChoose(company.Departments);
+                        Department.ListDepartmentsToChoose();
                         string input = Console.ReadLine();
                         int index = 0;
-                        if (int.TryParse(input, out index) && index < company.Departments.Count)
+                        if (int.TryParse(input, out index) && index < departments.Count)
                         {
-                            RunEmployees(company.Departments[index]);
+                            RunEmployees(departments[index]);
                         }
                         else
                         {
                             Console.WriteLine("Invalid Input");
                         }
                         break;
+                    case DepartmentOperation.EmployeMenu:
+                        RunEmployees();
+                        break;
                     default:
                         Console.WriteLine("Invalid Choose");
                         break;
                 }
-                operation = Menu.DepartmentListMenu(company);
+                operation = Menu.DepartmentListMenu();
             }
         }
 
-        public static void RunEmployees(Department department, Department newDepartment = null)
+        public static void RunEmployees(Department department = null)
         {
-            if (newDepartment == null)
-            {
-                newDepartment = department;
-            }
-            Console.BackgroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine(department.ToString());
-            Console.ResetColor();
             EmployeeOperation operation = Menu.EmployeeListMenu(department);
             while(operation != EmployeeOperation.Exit)
             {
@@ -116,16 +79,16 @@
                 {
                     // Employees
                     case EmployeeOperation.CreateEmployee:
-                        Employee.CreateEmployee(department.employees, department);
+                        Employee.CreateEmployee();
                         break;
                     case EmployeeOperation.DeleteEmployee:
-                        Employee.DeleteEmployee(department.employees);
+                        Employee.DeleteEmployee();
                         break;
                     case EmployeeOperation.EditEmployee:
-                        Employee.EditEmployee(department.employees, newDepartment);
+                        Employee.EditEmployee();
                         break;
                     case EmployeeOperation.ListEmployee:
-                        Employee.ListEmployees(department.employees);
+                        Employee.ListEmployees(department);
                         break;
                     default:
                         Console.WriteLine("Invalid Choose");

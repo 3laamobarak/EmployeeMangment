@@ -8,20 +8,25 @@ using static EmployeeMangment.Program;
 
 namespace EmployeeMangment
 {
+    public enum Statue
+    {
+        Active,
+        Terminated
+    }
     public class Employee
     {
         int Id;
-        public string Name;
-        string Age;
-        public decimal Salary;
-        public short Score = 1;
-        Department Department;
-        DateTime EmploymentDate;
+        public string Name {  get; set; }
+        public string Age {  get; set; }
+        public decimal Salary {  get; set; }
+        public float Score {  get; set; }
+        public Department Department { get; set; }
+        public DateTime EmploymentDate { get; set; }
         Statue statue;
 
-        public Employee(string name, string age, decimal salary, Department department,short score)
+        public Employee(string name, string age, decimal salary, Department department, float score, int id=0)
         {
-            Id = GetHashCode();
+            Id = id != 0 ? id :GetHashCode();
             Name = name;
             Age = age;
             Salary = salary;
@@ -48,7 +53,8 @@ namespace EmployeeMangment
         {
             return $"ID: {Id}, \t Name: {Name}, \t Age: {Age}," +
                 $"\n\tSalary: {Salary}, Department: {Department.Name}, EmploymentDate: {EmploymentDate}," +
-                $"\n\tStatus: {statue}";
+                $"\n\tStatus: {statue}," +
+                $"\n\tScore: {Score}";
         }
 
 
@@ -61,8 +67,25 @@ namespace EmployeeMangment
             return Console.ReadLine();
         }
 
-        public static void CreateEmployee(List<Employee> employees, Department department)
+        public static int getDepartmentIndex()
         {
+            Department.ListDepartmentsToChoose();
+            string inputDepartment = Console.ReadLine();
+            int index = 0;
+            if (!int.TryParse(inputDepartment, out index) || index > departments.Count)
+            {
+                Console.WriteLine("Invalid Input");
+                return -1;
+            }
+            return index;
+        }
+
+        public static void CreateEmployee()
+        {
+           int index = getDepartmentIndex();
+            if (index == -1) {
+                return;
+            }
             string input = GetEmployeeInput();
             while (input != null && input.Trim() != "q")
             {
@@ -76,7 +99,7 @@ namespace EmployeeMangment
                     short score;
                     if (decimal.TryParse(items[2].ToString(), out salary) && short.TryParse(items[3], out score))
                     {
-                        employees.Add(new Employee(items[0], items[1], salary, department, score));
+                        employees.Add(new Employee(items[0], items[1], salary, Program.departments[index], score));
                     }
                     else
                     {
@@ -91,7 +114,7 @@ namespace EmployeeMangment
             }
         }
 
-        public static void EditEmployee(List<Employee> employees, Department department)
+        public static void EditEmployee()
         {
             Console.BackgroundColor = ConsoleColor.Magenta;
             Console.ForegroundColor = ConsoleColor.Black;
@@ -106,6 +129,11 @@ namespace EmployeeMangment
 
             if (int.TryParse(EmployeeNumber, out index) && index < employees.Count)
             {
+                int departmentIndex = getDepartmentIndex();
+                if (departmentIndex == -1)
+                {
+                    return;
+                }
                 string input = GetEmployeeInput();
                 var items = input.Trim().Split(",");
                 decimal salary;
@@ -119,7 +147,7 @@ namespace EmployeeMangment
                     employees[index].Age = items[1];
                     employees[index].Salary = salary;
                     employees[index].Score = score;
-                    employees[index].Department = department;
+                    employees[index].Department = Program.departments[departmentIndex];
                 }
                 else
                 {
@@ -132,7 +160,7 @@ namespace EmployeeMangment
             }
         }
 
-        public static void DeleteEmployee(List<Employee> employees)
+        public static void DeleteEmployee()
         {
             Console.BackgroundColor = ConsoleColor.Red;
             Console.ForegroundColor = ConsoleColor.Black;
@@ -149,9 +177,9 @@ namespace EmployeeMangment
                 if (int.TryParse(EmployeeNumber, out index) && index < employees.Count)
                 {
                     Console.BackgroundColor = ConsoleColor.Green;
-                    Console.WriteLine($"Employee {employees[index].Name} Deleted Successfully");
+                    Console.WriteLine($"Employee {Program.employees[index].Name} Deleted Successfully");
                     Console.ResetColor();
-                    employees.RemoveAt(index);
+                    Program.employees.RemoveAt(index);
                 }
                 else
                 {
@@ -161,17 +189,39 @@ namespace EmployeeMangment
             }
         }
 
-        public static void ListEmployees(List<Employee> employees)
+        public static void ListEmployees(Department department = null)
         {
             Console.BackgroundColor = ConsoleColor.Cyan;
             Console.ForegroundColor = ConsoleColor.Black;
-            Console.WriteLine("Avalable Employees....");
-            Console.ResetColor();
-
-            foreach (Employee Employee in employees)
-            {
-                Console.WriteLine(Employee.ToString());
+            if (department == null) {
+                Console.WriteLine("Avalable Employees....");
             }
+            else
+            {
+                Console.WriteLine($"Department({department.Name}): Avalable Employees....");
+            }
+                
+            Console.ResetColor();
+            int counter = 0;
+
+            foreach (Employee Employee in Program.employees)
+            {
+                if (department != null)
+                {
+                    if (Employee.Department.Id == department.Id)
+                    {
+                        Console.WriteLine(Employee.ToString());
+                        counter++;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine(Employee.ToString());
+                    counter++;
+                }
+            }
+
+            Console.WriteLine($"Number of Employees: {counter}");
         }
 
     }

@@ -28,3 +28,5 @@ L:\iti\c#_oop\EmployeeMangment\EmployeeMangment\obj\Debug\net8.0\refint\Employee
 L:\iti\c#_oop\EmployeeMangment\EmployeeMangment\obj\Debug\net8.0\EmployeeMangment.pdb
 L:\iti\c#_oop\EmployeeMangment\EmployeeMangment\obj\Debug\net8.0\EmployeeMangment.genruntimeconfig.cache
 L:\iti\c#_oop\EmployeeMangment\EmployeeMangment\obj\Debug\net8.0\ref\EmployeeMangment.dll
+L:\iti\c#_oop\EmployeeMangment\EmployeeMangment\bin\Debug\net8.0\departments.csv
+L:\iti\c#_oop\EmployeeMangment\EmployeeMangment\bin\Debug\net8.0\employees.csv
